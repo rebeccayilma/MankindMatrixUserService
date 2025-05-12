@@ -56,7 +56,32 @@ Or from your IDE:
 
 Use Postman or your browser (for GETs):
 
+#### ✅ Register a User
 
+```http
+POST http://localhost:8081/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "username": "jane_doe",
+  "email": "jane@example.com",
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "password": "password123"
+}
+```
+
+#### ✅ Login User
+
+```http
+POST http://localhost:8081/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "jane_doe",
+  "password": "password123"
+}
+```
 
 #### ✅ Get All Users
 
@@ -72,4 +97,17 @@ GET http://localhost:8081/api/v1/users/1
 Accept: application/json
 ```
 
+#### ✅ Update User Details
 
+```http
+PUT http://localhost:8081/api/v1/users/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer your_jwt_token
+
+{
+  "firstName": "UpdatedFirstName",
+  "lastName": "UpdatedLastName",
+  "email": "updated.email@example.com"
+}
+```
