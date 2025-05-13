@@ -6,6 +6,7 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
+
 @Data
 public class UserDTO {
     private Long id;
@@ -18,4 +19,6 @@ public class UserDTO {
     private boolean active;
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
+    
+
 }
