@@ -19,6 +19,7 @@ public class UserDTO {
     private boolean active;
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
+    private String xyz=role.name();
     
 
 }

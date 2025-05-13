@@ -78,7 +78,7 @@ public class UserService {
         user.setFirstName(dto.getFirstName());
         user.setLastName(dto.getLastName());
         user.setUsername(dto.getUsername());
-        user.setRole(Role.valueOf(dto.getRole()));
+        user.setRole(Role.valueOf(dto.getXyz()));
         user.setActive(dto.isActive());
     
         return userMapper.toDto(userRepository.save(user));
