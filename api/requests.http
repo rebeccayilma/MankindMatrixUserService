@@ -60,7 +60,7 @@ Authorization: Bearer {{token}}
 PUT http://localhost:8081/api/v1/users/1
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer {{token}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYW1wbGVVc2VyIiwiaWF0IjoxNzQ3MTkxNTM4LCJleHAiOjE3NDcyNzc5Mzh9.U3EKjp9Y6H4cE2kv_SWXi8_vVffwn1apKqYHw-fJNRE
 
 {
   "firstName": "UpdatedFirstName",
