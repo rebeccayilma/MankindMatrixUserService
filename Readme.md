@@ -97,4 +97,17 @@ GET http://localhost:8081/api/v1/users/1
 Accept: application/json
 ```
 
+#### ✅ Update User Details
 
+```http
+PUT http://localhost:8081/api/v1/users/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer your_jwt_token
+
+{
+  "firstName": "UpdatedFirstName",
+  "lastName": "UpdatedLastName",
+  "email": "updated.email@example.com"
+}
+```
